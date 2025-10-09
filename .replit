@@ -1,4 +1,4 @@
-entrypoint = "day8/main.py"
+entrypoint = "day9/main.py"
 modules = ["python-3.11"]
 
 [nix]
@@ -16,3 +16,7 @@ deploymentTarget = "cloudrun"
 
 [agent]
 expertMode = true
+
+[[ports]]
+localPort = 5000
+externalPort = 80
